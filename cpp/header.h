@@ -93,7 +93,7 @@
 #include <chrono> 
 #include <functional>
 
-#include <locale>   , see clocale above
+#include <locale>   // see clocale above
 #include <regex>    
 
 #include <typeindex>
@@ -155,5 +155,3 @@
 // C++26
 //#include <inplace_vector>
 //#include <hive>
-
-#include <iterator>

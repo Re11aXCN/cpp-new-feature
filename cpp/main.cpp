@@ -14,13 +14,11 @@ int main() {
     SetConsoleOutputCP(CP_UTF8); // 输出 UTF-8 编码
 #endif
     std::cout.setf(std::ios_base::boolalpha);
-
     auto benchmark = [](std::string_view name, auto&& func) {
         auto start = std::chrono::high_resolution_clock::now();
         func();
         auto end = std::chrono::high_resolution_clock::now();
         std::println("{} took {}ms", name, std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count());
         };
-
     return 0;
 }

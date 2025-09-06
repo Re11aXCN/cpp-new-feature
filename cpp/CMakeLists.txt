@@ -40,6 +40,8 @@ else()
     )
 endif()
 
-
+# char / signed char / unsigned char 都是独立类型，可以使用以下方式指定编译器char是signed char还是unsigned char
+# -funsigned-char
+# -fsigned-char
 #find_package(OpenMP REQUIRED)
 #target_link_libraries(cpp_main OpenMP::OpenMP_CXX) # 添加OpenMP库
